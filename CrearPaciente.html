@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/botones.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/f1d55eea8b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+
+            <ul class="navbar-nav mr-auto">
+                <img src="img/logopomo.png" width="100" height="auto" class="img-fluid">           
+            </ul>
+            <!-- BOTON MENU HAMBURGUESA -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+              </ul>
+                <div class="mr-3">       
+                    <h6 class="text-uppercase text-white"> Nombre Usuario </h6>
+                    <a class="h6" href="index.html" style="color: white;">Cerrar Sesion</a>
+                </div>
+                <img class="img-thumbnail rounded mr-3" src="img/fotoPerfil.png" width="50" alt="">
+                <img class="img-fluid" src="img/Logo-Duoc.png" width="160">
+            </div>
+          </nav>
+    </header>
+
+   
+    <div class="px-3 py-1">
+        <a class="text-uppercase text-dark text-decoration-none" style="cursor: pointer;"><i class="fa-solid fa-angle-left"></i> Volver</a>
+    </div>
+
+    <div class="d-flex justify-content-start p-3 animate__animated animate__fadeInLeft">
+
+
+        <form class="w-100">
+
+        <div class="row">
+
+            <div class="col">
+                
+                <div class="row"> 
+                    <div class="form-group col-sm-6 flex-column d-flex"> 
+                        <label class="form-control-label"><b>Nombre Paciente</b>
+                            <span class="text-danger"> *</span>
+                        </label> 
+                        <input class="form-control" required type="text" placeholder="Ingrese nombre"></div>
+
+                    <div class="form-group  col-sm-6 flex-column d-flex">
+                        <label class="form-control-label"><b>Contraseña Paciente</b>
+                            <span class="text-danger"> *</span>
+                        </label> 
+                        <input class="form-control" required type="text" placeholder="Ingrese contraseña">
+                        <small class="text-muted mt-1">La contraseña debe tener más de 6 caracteres</small>
+                    </div>
+                </div>
+             
+                <div class="row justify-content-between text-left">
+                    <div class="form-group col-sm-6 flex-column d-flex"> 
+                        <label class="form-control-label"> <b>Correo Paciente</b>
+                            <span class="text-danger"> *</span>
+                        </label> 
+                        <input class="form-control"  required type="email"  placeholder="Ingrese correo"></div>
+
+                    <div class="form-group col-sm-6 flex-column d-flex"> 
+                        <label class="form-label"> <b>Cuidador</b>
+                            <span class="text-danger"> *</span>
+                        </label>
+                        <input class="form-control" required type="text" placeholder="Ingrese cuidador">
+                    </div>
+                </div>
+
+                <div class="row justify-content-between text-left">
+                    <div class="form-group col-sm-6 flex-column d-flex"> 
+                        <label class="form-control-label"> <b>Número Telefonico</b>
+                            <span class="text-danger"> *</span>
+                        </label> 
+                        <input class="form-control"  required type="text"  placeholder="Ingrese Numero Telefonico"></div>
+
+                    <div class="form-group col-sm-6 flex-column d-flex"> 
+                        <label class="form-label"> <b>Comuna Paciente</b>
+                            <span class="text-danger"> *</span>
+                        </label>
+                        <input class="form-control" required type="text" placeholder="Ingrese Comuna">
+                    </div>
+                </div>
+
+
+                <div class="row justify-content-between text-left">
+                    <div class="form-group col-sm-12 flex-column d-flex"> 
+                        <label class="form-control-label"> <b>Descripcion del paciente</b>
+                            <span class="text-danger"> *</span>
+                        </label> 
+                        <textarea style="resize: none;" required class="form-control" cols="300" rows="6" ></textarea>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="col-sm">               
+                <div class="d-flex justify-content-center">
+
+                    <img style="object-fit: contain; cursor:pointer;" class="img-fluid p-5 rounded-circle" src="./img/fotoPerfil.png" alt="foto">
+                </div>
+
+
+                <div class="d-flex justify-content-center">
+
+                        <div class="btn-grad-gray" onclick="_upload()">
+                            Subir Archivo
+                            <i class="fa-solid fa-upload ml-2"></i>
+                            <input type="file" id="file_upload_id" style="display: none;" accept="image/png, image/jpeg, image/JPG" required>  
+                        </div>  
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <div class="d-flex justify-content-end ">
+            <button class="btn-grad-moon mr-3 text-white" style="color: black;">Crear Paciente</button>
+        </div>
+
+        </form>
+        
+    </div>
+
+
+
+    <script>
+        function _upload(){
+            document.getElementById('file_upload_id').click();
+        }
+    </script>
+
+                  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+    
+</body>
+</html>
