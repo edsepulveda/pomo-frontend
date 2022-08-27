@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Videos</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/botones.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/f1d55eea8b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+
+            <ul class="navbar-nav mr-auto">
+                <img src="img/logopomo.png" width="100" height="auto" class="img-fluid">           
+            </ul>
+            <!-- BOTON MENU HAMBURGUESA -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+              </ul>
+                <div class="mr-3">       
+                    <h6 class="text-uppercase text-white"> Nombre Usuario </h6>
+                    <a class="h6" href="index.html" style="color: white;">Cerrar Sesion</a>
+                </div>
+                <img class="img-thumbnail rounded mr-3" src="img/fotoPerfil.png" width="50" alt="">
+                <img class="img-fluid" src="img/Logo-Duoc.png" width="160">
+            </div>
+          </nav>
+    </header>
+
+   
+    <div class="px-3 py-1">
+        <a class="text-uppercase text-dark text-decoration-none" style="cursor: pointer;"><i class="fa-solid fa-angle-left"></i> Volver</a>
+    </div>
+
+
+    <div class="d-flex justify-content-center p-4 animate__animated animate__fadeInLeft">
+
+      <div class="col px-4 py-3">
+        
+        <div class="accordion" id="accordion">
+
+<!-- ---------------------------------------------------------------------------------------- -->
+          <div class="">
+            
+            <div class="" id="headingOne">
+              <h3 class="mb-0">
+                  <button id="activate" onclick="show(); blur();" class="btn btn-link text-decoration-none" data-toggle="collapse"  data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="fas fa-angle-left"></i> CATEGORIA 1
+                </button>
+              </h3>
+            </div>
+  
+            <div id="collapseOne" class="collapse p-3" aria-labelledby="headingOne" >
+              <div class="row d-flex p-2"> 
+                
+                <img class="p-3" src="img/miniatura.png" alt="">
+  
+                <div class="col-sm mt-3">
+                  <h3>Titulo del video</h3>
+                  <h6>Descripcion video</h6>
+                </div>
+              </div>
+            
+  
+              <div class="d-flex justify-content-start">   
+                <button class="btn btn-danger btn-sm mr-2" style="border-radius: 12px;">Eliminar</button>
+                <button class="btn btn-secondary btn-sm mr-5" style="border-radius: 12px;">Editar</button>
+              </div>
+            </div>
+  
+            <div id="collapseOne" class="collapse p-3" aria-labelledby="headingOne">
+              <div class="row d-flex p-2"> 
+              
+                <img class="p-3" src="img/miniatura.png" alt="">
+  
+                <div class="col-sm mt-3">
+                  <h3>Titulo del video</h3>
+                  <h6>Descripcion video</h6>
+                </div>
+  
+              </div>
+               
+                <div class="d-flex justify-content-start">   
+                  <button class="btn btn-danger btn-sm mr-2" style="border-radius: 12px;">Eliminar</button>
+                  <button class="btn btn-secondary btn-sm mr-5" style="border-radius: 12px;">Editar</button>
+                </div>  
+            </div>
+
+          </div>
+          
+<!-- ---------------------------------------------------------------------------------------------- -->
+
+          <div class="">
+            
+            <div class="" id="headingTwo">
+              <h3 class="mb-0">
+                  <button id="activate2" onclick="show2(); blur();" class="btn btn-link text-decoration-none" data-toggle="collapse"  data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-angle-left"></i> CATEGORIA 2
+                </button>
+              </h3>
+            </div>
+  
+            <div id="collapseTwo" class="collapse p-3" aria-labelledby="headingTwo" >
+              <div class="row d-flex p-2"> 
+                
+                <img class="p-3" src="img/miniatura.png" alt="">
+  
+                <div class="col-sm mt-3">
+                  <h3>Titulo del video</h3>
+                  <h6>Descripcion video</h6>
+                </div>
+              </div>
+            
+  
+              <div class="d-flex justify-content-start">   
+                <button class="btn btn-danger btn-sm mr-2" style="border-radius: 12px;">Eliminar</button>
+                <button class="btn btn-secondary btn-sm mr-5" style="border-radius: 12px;">Editar</button>
+              </div>
+            </div>
+  
+          </div>
+
+
+<!-- ---------------------------------------------------------------------------------------------- -->
+
+          <div class="">
+                
+            <div class="" id="headingThree">
+              <h3 class="mb-0">
+                  <button id="activate3" onclick="show3(); blur();" class="btn btn-link text-decoration-none" data-toggle="collapse"  data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    <i class="fas fa-angle-left"></i> CATEGORIA 3
+                </button>
+              </h3>
+            </div>
+
+            <div id="collapseThree" class="collapse p-3" aria-labelledby="headingThree">
+              <div class="row d-flex p-2"> 
+                
+                <img class="p-3" src="img/miniatura.png" alt="">
+
+                <div class="col-sm mt-3">
+                  <h3>Titulo del video</h3>
+                  <h6>Descripcion video</h6>
+                </div>
+              </div>
+            
+
+              <div class="d-flex justify-content-start">   
+                <button class="btn btn-danger btn-sm mr-2" style="border-radius: 12px;">Eliminar</button>
+                <button class="btn btn-secondary btn-sm mr-5" style="border-radius: 12px;">Editar</button>
+              </div>
+            </div>
+
+          </div>
+    
+  <!-- ----------------------------------------------------------------------------------- -->
+
+          <div class="">
+                
+            <div class="" id="headingFour">
+              <h3 class="mb-0">
+                  <button id="activate4" onclick="show4(); blur();" class="btn btn-link text-decoration-none" data-toggle="collapse"  data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    <i class="fas fa-angle-left"></i> CATEGORIA 4
+                </button>
+              </h3>
+            </div>
+
+            <div id="collapseFour" class="collapse p-3" aria-labelledby="headingFour">
+              <div class="row d-flex p-2"> 
+                
+                <img class="p-3" src="img/miniatura.png" alt="">
+
+                <div class="col-sm mt-3">
+                  <h3>Titulo del video</h3>
+                  <h6>Descripcion video</h6>
+                </div>
+              </div>
+            
+
+              <div class="d-flex justify-content-start">   
+                <button class="btn btn-danger btn-sm mr-2" style="border-radius: 12px;">Eliminar</button>
+                <button class="btn btn-secondary btn-sm mr-5" style="border-radius: 12px;">Editar</button>
+              </div>
+            </div>
+
+          </div>
+
+  <!-- ---------------------------------------------------------------------------------------- -->
+
+          <div class="">
+                        
+            <div class="" id="headingFive">
+              <h3 class="mb-0">
+                  <button id="activate5" onclick="show5(); blur();" class="btn btn-link text-decoration-none" data-toggle="collapse"  data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                    <i class="fas fa-angle-left"></i> EJERCICIOS POMO
+                </button>
+              </h3>
+            </div>
+
+            <div id="collapseFive" class="collapse p-3" aria-labelledby="headingFive">
+              <div class="row d-flex p-2"> 
+                
+                <img class="p-3" src="img/miniatura.png" alt="">
+
+                <div class="col-sm mt-3">
+                  <h3>Titulo del video</h3>
+                  <h6>Descripcion video</h6>
+                </div>
+              </div>
+            
+
+              <div class="d-flex justify-content-start">   
+                <button class="btn btn-danger btn-sm mr-2" style="border-radius: 12px;">Eliminar</button>
+                <button class="btn btn-secondary btn-sm mr-5" style="border-radius: 12px;">Editar</button>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+  <script> //Funcion para cambiar el icono con un click
+    function show(){
+      $('#activate').find("i").toggleClass('fa-solid fa-angle-right');
+    }
+
+    function show2(){
+      $('#activate2').find("i").toggleClass('fa-solid fa-angle-right');
+    }
+
+    function show3(){
+      $('#activate3').find("i").toggleClass('fa-solid fa-angle-right');
+    }
+    
+    function show4(){
+      $('#activate4').find("i").toggleClass('fa-solid fa-angle-right');
+    }
+
+    function show5(){
+      $('#activate5').find("i").toggleClass('fa-solid fa-angle-right');
+    }
+  </script>
+               
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+    
+</body>
+</html>
