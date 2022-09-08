@@ -43,8 +43,9 @@
         <a class="text-uppercase text-dark text-decoration-none" style="cursor: pointer;"><i class="fa-solid fa-angle-left"></i> Volver</a>
     </div>
 
-    <div class="d-flex justify-content-start p-3 animate__animated animate__fadeInLeft">
+    <div class="d-flex justify-content-start p-4 animate__animated animate__fadeInLeft">
 
+      <div class="container-fluid">
 
         <form class="w-100">
 
@@ -53,13 +54,13 @@
             <div class="col">
                 
                 <div class="row"> 
-                    <div class="form-group col-sm-6 flex-column d-flex"> 
+                    <div class="form-group col-sm-6 d-flex flex-column"> 
                         <label class="form-control-label"><b>Nombre Paciente</b>
                             <span class="text-danger"> *</span>
                         </label> 
                         <input class="form-control" required type="text" placeholder="Ingrese nombre"></div>
 
-                    <div class="form-group  col-sm-6 flex-column d-flex">
+                    <div class="form-group  col-sm-6 d-flex flex-column">
                         <label class="form-control-label"><b>Contraseña Paciente</b>
                             <span class="text-danger"> *</span>
                         </label> 
@@ -75,7 +76,7 @@
                         </label> 
                         <input class="form-control"  required type="email"  placeholder="Ingrese correo"></div>
 
-                    <div class="form-group col-sm-6 flex-column d-flex"> 
+                    <div class="form-group col-sm-6 d-flex flex-column"> 
                         <label class="form-label"> <b>Cuidador</b>
                             <span class="text-danger"> *</span>
                         </label>
@@ -90,7 +91,7 @@
                         </label> 
                         <input class="form-control"  required type="text"  placeholder="Ingrese Numero Telefonico"></div>
 
-                    <div class="form-group col-sm-6 flex-column d-flex"> 
+                    <div class="form-group col-sm-6 d-flex flex-column"> 
                         <label class="form-label"> <b>Comuna Paciente</b>
                             <span class="text-danger"> *</span>
                         </label>
@@ -100,7 +101,7 @@
 
 
                 <div class="row justify-content-between text-left">
-                    <div class="form-group col-sm-12 flex-column d-flex"> 
+                    <div class="form-group col-sm-12 flex-column d-flex">
                         <label class="form-control-label"> <b>Descripcion del paciente</b>
                             <span class="text-danger"> *</span>
                         </label> 
@@ -114,13 +115,13 @@
             <div class="col-sm">               
                 <div class="d-flex justify-content-center">
 
-                    <img style="object-fit: contain; cursor:pointer;" class="img-fluid p-5 rounded-circle" src="./img/fotoPerfil.png" alt="foto">
+                    <img style="object-fit: contain;" class="img-fluid p-5 rounded-circle" src="./img/fotoPerfil.png" alt="foto">
                 </div>
 
 
                 <div class="d-flex justify-content-center">
 
-                        <div class="btn-grad-gray" onclick="_upload()">
+                        <div class="btn-grad-normal" onclick="_upload()">
                             Subir Archivo
                             <i class="fa-solid fa-upload ml-2"></i>
                             <input type="file" id="file_upload_id" style="display: none;" accept="image/png, image/jpeg, image/JPG" required>  
@@ -131,14 +132,14 @@
             
         </div>
 
-        <div class="d-flex justify-content-end ">
-            <button class="btn-grad-moon mr-3 text-white" style="color: black;">Crear Paciente</button>
+        <div class="d-flex justify-content-end mt-3">
+            <button class="btn-grad-moon text-white">Crear Paciente</button>
         </div>
 
         </form>
         
     </div>
-
+  </div>
 
 
     <script>

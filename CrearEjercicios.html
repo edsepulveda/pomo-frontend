@@ -43,6 +43,8 @@
         <a class="text-uppercase text-dark" style="cursor: pointer;"><i class="fa-solid fa-angle-left"></i> Volver</a>
     </div>
 
+
+    <div class="container-fluid">
     <div class="d-flex justify-content-center p-4 animate__animated animate__fadeInLeft">
 
 
@@ -54,18 +56,18 @@
                 
                 <div class="row"> 
 
-                    <div class="form-group col-sm-6 flex-column d-flex"> 
+                    <div class="form-group col-lg-6 col-sm-12 d-flex flex-column"> 
                         <label class="form-control-label"><b>Nombre del Ejercicio</b>
                         <span class="text-danger"> *</span>
                         </label> 
                         <input class="form-control" required type="text" placeholder="Ingrese nombre">                       
                     </div>
 
-                    <div class="form-group col flex-column d-flex">
+                    <div class="form-group col d-flex flex-column">
                         <label class="form-control-label" for="cat"><b>Categoria</b>
                         <span class="text-danger"> *</span>
 
-                        <select class="form-control col-md-5 mt-2" name="cat" id="cat" required>
+                        <select class="form-control col-lg-6 col-sm-12 mt-2" name="cat" id="cat" required>
                             <option value="">Selecciona Ejercicio</option>
                             <option value="1">Categoria 1</option>
                             <option value="2">Categoria 2</option>
@@ -78,15 +80,17 @@
 
                 <div class="row justify-content-between text-left">
 
-                    <div class="form-group col-sm-6 flex-column d-flex">
+                    <div class="form-group col-lg-6 col-sm-12 d-flex flex-column">
                         <label class="form-control-label" > <b>Adjunta Videos</b>
                             <span class="text-danger"> *</span>
-                        </label> 
-                        <img style="object-fit: contain;" onclick="_upload()" class="img-fluid border border-dark" src="./img/adjuntaEjercicio.png" alt="foto">
-                        <input type="file" id="file_upload_id" style="display: none;" accept="image/png, image/jpeg, image/JPG" required>
+                        </label>
+                  
+                          <img style="object-fit: contain; cursor: pointer;" onclick="_upload()" class="img-fluid border border-dark" src="./img/adjuntaEjercicio.png" alt="foto">
+                          <input type="file" id="file_upload_id" style="display: none;" accept="image/png, image/jpeg, image/JPG" required>
+                        
                     </div>
 
-                    <div class="form-group col-sm-6 flex-column d-flex">
+                    <div class="form-group col-lg-6 col-sm-12 d-flex flex-column">
                         <label class="form-control-label"> <b>Detalle del ejercicio</b>
                             <span class="text-danger"> *</span>
                         </label> 
@@ -105,16 +109,16 @@
 
         </form>
     </div>
-
+  </div>
 
 
 
     <!-- FUNCION  PARA QUE AL TOCAR LA IMG SE HABRA EL INPUT FILE -->
     <script>
-    function _upload(){
-        document.getElementById('file_upload_id').click();
-    }
-    </script>
+      function _upload(){
+          document.getElementById('file_upload_id').click();
+      }
+      </script>
 
         
                   
