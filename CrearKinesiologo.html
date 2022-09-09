@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicios</title>
+    <title>Crear Kinesiologo</title>
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <link rel="stylesheet" type="text/css" href="css/botones.css">
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -54,24 +54,16 @@
             <div class="col">
                 
                 <div class="row"> 
-                    <div class="form-group col-sm-6 d-flex flex-column"> 
+                    <div class="form-group col d-flex flex-column"> 
                         <label class="form-control-label"><b>Nombre Kinesiologo</b>
                             <span class="text-danger"> *</span>
                         </label> 
                         <input class="form-control" required type="text" placeholder="Ingrese nombre"></div>
-
-                    <div class="form-group  col-sm-6 d-flex flex-column">
-                        <label class="form-control-label"><b>Contraseña Kinesiologo</b>
-                            <span class="text-danger"> *</span>
-                        </label> 
-                        <input class="form-control" required type="password" placeholder="Ingrese contraseña">
-                        <small class="text-danger mt-1">La contraseña debe tener más de 6 caracteres</small>
-                    </div>
                 </div>
              
                 <div class="row justify-content-between text-left">
                     <div class="form-group col-sm-6 flex-column d-flex"> 
-                        <label class="form-control-label"> <b>Correo Paciente</b>
+                        <label class="form-control-label"> <b>Correo Kinesiologo</b>
                             <span class="text-danger"> *</span>
                         </label> 
                         <input class="form-control"  required type="email"  placeholder="Ingrese correo"></div>
@@ -80,7 +72,7 @@
                         <label class="form-label" id="rut"> <b>RUT</b>
                             <span class="text-danger"> *</span>
                         </label>
-                        <input class="form-control" required oninput="checkRut(this)" type="text" placeholder="Ingrese RUT">
+                        <input class="form-control" required oninput="checkRut(this)" type="text" minlength="7" maxlength="11" placeholder="Ingrese RUT">
                     </div>
                 </div>
 
