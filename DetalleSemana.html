@@ -4,85 +4,196 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/estilos.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="https://kit.fontawesome.com/f1d55eea8b.js" crossorigin="anonymous"></script>
     <title>Detalle Semana</title>
-    <style type="text/css">
-        body{text-align: center;}
-  </style>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/botones.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/f1d55eea8b.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <header>
-        <nav>
-            <ul class="barra-ind">
-                <li><img src="img/logopomo.png" width="160" height="auto" ></li>
-                <li><a href="index.html" style="color: white;" class="Cerrar-Sesion">Cerrar Sesion</a></li>
-                <li><img src="img/Logo-Duoc.png" width="160" class="Logo-d"></li>
+        <nav class="navbar navbar-expand-lg navbar-light">
+
+            <ul class="navbar-nav mr-auto">
+                <img src="img/logopomo.png" width="100" height="auto" class="img-fluid">           
             </ul>
-        </nav>
+            <!-- BOTON MENU HAMBURGUESA -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+              </ul>
+                <div class="mr-3">       
+                    <h6 class="text-uppercase text-white"> Nombre Usuario </h6>
+                    <a class="h6" href="index.html" style="color: white;">Cerrar Sesion</a>
+                </div>
+                <img class="img-thumbnail rounded mr-3" src="img/fotoPerfil.png" width="50" alt="">
+                <img class="img-fluid" src="img/Logo-Duoc.png" width="160">
+            </div>
+          </nav>
     </header>
 
-
-    <a class="Volver" href="javascript:history.back()"> Volver Atrás</a>
-
-    <br>
-    <br>
-    <br>
-    <br>
-
-        <h5>Semana 1</h5>
-
-    <div id="Detalle-Paciente" class="container">
-        <div class="row">  
-            <div class="col col-lg-4">
-                Pinza Dedo con Dedo
-            </div>  
-            <div class="col col-lg-8">
-                <a class="botonsT" href="">Detalles</a>
-            </div>
+   
+   
+    <div class="row">
+        <div class="col">
+            <div class="px-3 py-1">
+                <a class="text-uppercase text-dark" style="cursor: pointer;"><i class="fa-solid fa-angle-left"></i> Volver</a>
+            </div>        
         </div>
-        <div class="row">  
-            <div class="col col-lg-4">
-                Extencion y flexión pulgar
-            </div>  
-            <div class="col col-lg-8">
-                <a class="botonsT" href="">Detalles</a>
-            </div>
-        </div>
-        <div class="row">  
-            <div class="col col-lg-4">
-                Arañita
-            </div>  
-            <div class="col col-lg-8">
-                <a class="botonsT" href="">Detalles</a>
-            </div>
-        </div>
-        <div class="row">  
-            <div class="col col-lg-4">
-                Agarre completo balón
-            </div>  
-            <div class="col col-lg-8">
-                <a class="botonsT" href="">Detalles</a>
-            </div>
-        </div>
-        <div class="row">  
-            <div class="col col-lg-4">
-                Pellizco Plano
-            </div>  
-            <div class="col col-lg-8">
-                <a class="botonsT" href="">Detalles</a>
-            </div>
-        </div>
-        <div class="row">  
-            <div class="col col-lg-4">
-                Pellizco Chasquido
-            </div>  
-            <div class="col col-lg-8">
-                <a class="botonsT" href="">Detalles</a>
-            </div>
+    
+        <div class="col-sm">
+            <div class="text-right ">
+                Nombre Paciente: Mauricio Figueroa
+                <img class="img-thumbnail rounded m-3" src="img/fotoPerfil.png" width="50" alt="">
+            </div>   
         </div>
     </div>
+
+
+     
+    <div class="container w-75-sm d-flex animate__animated animate__fadeInLeft">      
+        <div class="row justify-content-end">
+            <h5 class="h5-responsivee mt-3 mr-3">SEMANA 1</h5>
+        </div>
+        <div class="row justify-content-end">
+            <button button class="btn-grad-normal text-white mr-5">
+                Anadir Ejercicio
+            </button>    
+        </div>
+    </div>
+
+
+
+    <div class="container w-75-sm p-3 mt-3 animate__animated animate__fadeInRight">
+        <div class="row ml-3">
+            <div class="col">   
+
+                <div class="row mt-4">
+                    <div class="col d-flex justify-content-start">
+                        <button class="mb-2 mr-2" style="background-color: white; border: none;">
+                            <i class="fa-solid fa-bars fa-lg"></i>
+                        </button>
+                        <h5 class="text-center h5-responsivee">
+                            <i style="color: #26C8DD" class="fa-solid fa-circle"></i>
+                            Ejercicio 1
+                        </h5>
+                    </div>
+
+                    <div class="col d-flex justify-content-end">
+                        <button class="btn-grad-red border border-none">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>               
+                        <button class="btn-grad-normal ml-2 h5-responsivee">Detalles</button>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col d-flex justify-content-start">
+                        <button class="mb-2 mr-2" style="background-color: white; border: none;">
+                            <i class="fa-solid fa-bars fa-lg"></i>
+                        </button>
+                        <h5 class="text-center h5-responsivee">
+                            <i style="color: #26C8DD" class="fa-solid fa-circle"></i>
+                            Ejercicio 2
+                        </h5>
+                    </div>
+
+                    <div class="col d-flex justify-content-end">
+                        <button class="btn-grad-red border border-none">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>               
+                        <button class="btn-grad-normal ml-2 h5-responsivee">Detalles</button>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col d-flex justify-content-start">
+                        <button class="mb-2 mr-2" style="background-color: white; border: none;">
+                            <i class="fa-solid fa-bars fa-lg"></i>
+                        </button>
+                        <h5 class="text-center h5-responsivee">
+                            <i style="color: #26C8DD" class="fa-solid fa-circle"></i>
+                            Ejercicio 3
+                        </h5>
+                    </div>
+
+                    <div class="col d-flex justify-content-end">
+                        <button class="btn-grad-red border border-none">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>               
+                        <button class="btn-grad-normal ml-2 h5-responsivee">Detalles</button>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col d-flex justify-content-start">
+                        <button class="mb-2 mr-2" style="background-color: white; border: none;">
+                            <i class="fa-solid fa-bars fa-lg"></i>
+                        </button>
+                        <h5 class="text-center h5-responsivee">
+                            <i style="color: #26C8DD" class="fa-solid fa-circle"></i>
+                            Ejercicio 4
+                        </h5>
+                    </div>
+
+                    <div class="col d-flex justify-content-end">
+                        <button class="btn-grad-red border border-none">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>               
+                        <button class="btn-grad-normal ml-2 h5-responsivee">Detalles</button>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col d-flex justify-content-start">
+                        <button class="mb-2 mr-2" style="background-color: white; border: none;">
+                            <i class="fa-solid fa-bars fa-lg"></i>
+                        </button>
+                        <h5 class="text-center h5-responsivee">
+                            <i style="color: #26C8DD" class="fa-solid fa-circle"></i>
+                            Ejercicio 5
+                        </h5>
+                    </div>
+
+                    <div class="col d-flex justify-content-end">
+                        <button class="btn-grad-red border border-none">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>               
+                        <button class="btn-grad-normal ml-2 h5-responsivee">Detalles</button>
+                    </div>
+                </div>
+
+                
+
+                
+            </div>
+        </div>
+      </div>
+
+      <div class="container d-flex justify-content-end animate__animated animate__fadeInLeft mt-4">
+        <button class="btn-grad-red text-white btn-md mr-4">Borrar Semana</button>
+      </div>
+
+
+
+ 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
     
 </body>
 </html>
